@@ -1,0 +1,217 @@
+@import "vendors/bootstrap/bootstrap.less";
+@import "vendors/font-awesome/font-awesome.less";
+
+@primary: #26a5d3;
+@dark:#333333;
+@light: #f4f4f4;
+
+html{
+	width:100%;
+	height:100%;
+}
+
+body{
+	width:100%;
+	height:100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	color:@dark;
+	background-color:@light
+}
+
+//Topography
+
+h1,h2,h3 {
+	margin:0 0 35px 0;
+	font-family: 'Patua One', cursive;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+
+p{
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+a{
+	color:@primary;
+}
+a:hover,a:focus{
+	text-decoration:none;
+	color: darken(@primary,20%);
+}
+
+//navigation
+.navbar{
+	
+	margin-bottom:0;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	text-transform:uppercase;
+	font-family: 'Patua One', cursive;
+	background-color:@dark;
+}
+.navbar-brand{
+	
+	font-family: 'Oswald', sans-serif;
+	bold:700;
+	font-size:40px;
+}
+.navbar-brand:focus{
+	outline:none;
+}
+
+.navbar-custom a{
+	color:@light;
+}
+.navbar-custom .nav li a{
+	-webkit-transition:background .3s ease-in-out;
+	-moz-transition:background .3s ease-in-out;
+	transition:background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover{
+	outline:none;
+	background-color: rgba(255,255,255,0.2);
+}
+
+.navbar-toggle{
+	padding:4px 6px;
+	font-size:16px;
+	color:@light;
+}
+
+@media(min-width:767px){
+	.navbar{
+	padding:20px 0;
+	border-bottom:none;
+	background:transparent;
+	-webkit-transition:background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition:background .5s ease-in-out, padding .5s ease-in-out;
+	transition:background .5s ease-in-out, padding .5s ease-in-out;
+	}
+
+	.top-nav-collapse{
+	padding:0;
+	background-color:@dark;
+	}
+	.navbar-custom.top-nav-collapse{
+		bprorder-bottom:1px solid rgba(255,255,255,0.3);
+	}
+}
+
+//landing page
+
+.intro{
+	display:table;
+	width:100%;
+	height:auto;
+	padding:100px 0;
+	text-align:center;
+	color:@light;
+	background:url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+	background-color:@dark;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+.intro-body{
+	display:table-cell;
+	vertical-align:middle;
+	
+}
+
+.brand-heading{
+	font-size:40px;
+}
+
+.intro-text{
+	font-size:18px;
+}
+
+@media(min-width:767px){
+	.intro{
+		height:100%;
+		padding:200px;
+	}
+	.brand-heading{
+		font-size:100px;
+	}
+	.intro-text{
+		font-size:25px;
+	}
+
+}
+//conetent section
+.content-section{
+	padding:50px 0 40px 0!important;
+}
+
+//icon blocks
+.block-icon-left{
+	overflow:auto;
+
+	h1,h2,h3,h4,h5,h6{
+		 margin: 0 0 10px 0;
+		 padding:0;
+		 font-size:20px
+	}
+
+	.icon-content{
+	float:left;
+	width:70%
+	}
+	.icon{
+	float:left;
+	width:30%;
+	margin-top:10px;
+	}
+}
+
+.who-section{
+	width:100%;
+	padding:50px 0;
+	color:@light;
+	background: url(../img/downloads-bg.jpg )no-reapet center center scroll;
+	background-color:@dark;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+}
+
+@media(min-width:767px){
+	.who-section{
+	padding:100px 0;
+	}
+}
+
+//client section
+
+#clients{
+	text_align:center;
+	img{
+	margin-right:30px;
+	}
+}
+
+//contact
+
+#contact{
+	background:@dark;
+	color:@light;
+	padding-bottom:80px;
+}
+
+//footer
+footer{
+	text-align:center;
+	margin:10px 0 0 0;
+	padding: 30px  0 0 0;
+	height: 80px;
+}
+
+.page-scroll{
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 1s;
+	-moz-transition-property: -webkit-transform;
+	-moz-transition-duration: 1s;
+}
